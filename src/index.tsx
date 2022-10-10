@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './routes/error'
-import Root from './routes/base'
-import { Testers, Request, Join } from './pages/_all'
+import Root from './routes/root'
+import { Users, Developers, Join, Manifest } from './pages/_all'
 
-import './scss/index.scss'
+import './scss/global.scss'
 
+// TODO: extract this logic outside of index.tsx
 const router = createBrowserRouter([
   {
     path: '/',
@@ -14,12 +15,16 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: 'find-a-tester',
-        element: <Testers />,
+        path: '/', // expert review wanted
+        element: <Manifest />,
       },
       {
-        path: 'make-a-request',
-        element: <Request />,
+        path: 'users',
+        element: <Users />,
+      },
+      {
+        path: 'developers',
+        element: <Developers />,
       },
       {
         path: 'join-us',

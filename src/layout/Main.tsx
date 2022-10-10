@@ -1,11 +1,8 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-interface Props {
-  view: JSX.Element
-}
-
-const Main = (props: Props) => {
-  return <main>{props.view}</main>
+const Main = () => {
+  return <main>{<Outlet />}</main>
 }
 
 export default Main

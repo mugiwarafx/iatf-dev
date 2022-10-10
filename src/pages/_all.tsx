@@ -1,6 +1,6 @@
-import Join from './Join'
+import Join from './JoinUs'
 import Manifest from './Manifest'
-import Request from './Request'
-import Testers from './Testers'
+import Developers from './Developers'
+import Users from './Users'
 
-export { Join, Manifest, Request, Testers }
+export { Join, Manifest, Developers, Users }

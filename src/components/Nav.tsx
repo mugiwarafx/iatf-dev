@@ -4,10 +4,18 @@ export default function Navbar() {
   return (
     <nav>
       <ul>
-        <NavLink to='/'>Manifest</NavLink>
-        <NavLink to='/find-a-tester'>Find a tester</NavLink>
-        <NavLink to='/make-a-request'>Make a Request</NavLink>
-        <NavLink to='/join-us'>Join us!</NavLink>
+        <li>
+          <NavLink to='/'>Manifest</NavLink>
+        </li>
+        <li>
+          <NavLink to='/users'>Users</NavLink>
+        </li>
+        <li>
+          <NavLink to='/developers'>Developers</NavLink>
+        </li>
+        <li>
+          <NavLink to='/join-us'>Join us!</NavLink>
+        </li>
       </ul>
     </nav>
   )
